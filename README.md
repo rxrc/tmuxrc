@@ -1,10 +1,104 @@
-# tmux config
+# tmux Configuration
 
 [![MIT License](https://img.shields.io/badge/license-MIT-red.svg)](./LICENSE.txt)
 
+My complete tmux configuration as a tmux plugin.
+
+## Description
+
+This configuration system works as a meta-plugin:
+all desired tmux plugins are loaded from `plugins.conf` using
+[Tmux Plugin Manager].
+Overall configuration then follows a normal plugin structure.
+
+[Tmux Plugin Manager]: https://github.com/tmux-plugins/tpm
+
+## Installation
+
+You must be in a tmux session to install.
+
+### Automatic Install
+
+You can install this via the command-line with either curl
+
+````bash
+curl -L https://io.evansosenko.com/tmuxrc/install.sh | sh
+````
+
+or wget
+
+````bash
+wget https://io.evansosenko.com/tmuxrc/install.sh -O - | sh
+````
+
+### Manual Install
+
+1. Install [Tmux Plugin Manager].
+2. Create `~/.tmux.conf` with
+
+````tmux
+# razor-x/tmuxrc
+
+if-shell "test -f ~/.tmux/plugins/tmuxrc/plugins.conf" "source ~/.tmux/plugins/tmuxrc/plugins.conf"
+
+if-shell "test ! -f ~/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm razor-x/tmuxrc'"
+
+run-shell '~/.tmux/plugins/tpm/tpm'
+````
+
+and run this to install
+
+````bash
+~/.tmux/plugins/tpm/scripts/install_plugins.sh
+~/.tmux/plugins/tpm/scripts/update_plugin.sh
+~/.tmux/plugins/tpm/scripts/install_plugins.sh
+~/.tmux/plugins/tpm/scripts/update_plugin.sh
+````
+
+## Updating
+
+Updating is handled via the normal [Tmux Plugin Manager]
+install and update commands.
+
+Alternatively, you can run the commands listed in the Manual Install section.
+
+## Customization
+
+You can customize this configuration or manage your own in the same way.
+
+1. Clone or fork this.
+   If you prefer a clean start, clone the `minimal` branch:
+   it has the same structure and development tools but with
+   a very minimal configuration.
+2. Replace any instance of `razor-x/tmuxrc`
+   with the path to your repository's location.
+   If you do not host this on GitHub,
+   you may need to adjust the repository path appropriately.
+3. Update `install.sh` on the `gh-pages` branch.
+4. Update the urls for the install script in this README.
+
+Here is an example of a command you can use to make replacements:
+
+````bash
+git ls-files -z | xargs -0 sed -i 's/razor-x\/tmuxrc/username\/tmuxrc/g'
+````
+
+## Contributing
+
+Please submit and comment on bug reports and feature requests.
+
+To submit a patch:
+
+1. Fork it (https://github.com/razor-x/tmuxrc/fork).
+2. Create your feature branch (`git checkout -b my-new-feature`).
+3. Make changes.
+4. Commit your changes (`git commit -am 'Add some feature'`).
+5. Push to the branch (`git push origin my-new-feature`).
+6. Create a new Pull Request.
+
 ## License
 
-This code is licensed under the MIT license.
+This tmux configuration is licensed under the MIT license.
 
 ## Warranty
 
