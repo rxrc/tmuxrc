@@ -45,9 +45,7 @@ tee ~/.tmux.conf >/dev/null <<EOF
 # razor-x/tmuxrc
 
 if-shell "test -f ~/.tmux/plugins/tmuxrc/plugins.conf" "source ~/.tmux/plugins/tmuxrc/plugins.conf"
-
 if-shell "test ! -f ~/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm razor-x/tmuxrc'"
-
 run-shell '~/.tmux/plugins/tpm/tpm'
 EOF
 
