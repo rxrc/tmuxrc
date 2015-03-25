@@ -22,13 +22,13 @@ You must be in a tmux session to install.
 You can install this via the command-line with either curl
 
 ```bash
-curl -L https://io.evansosenko.com/tmuxrc/install.sh | sh
+$ curl -L https://io.evansosenko.com/tmuxrc/install.sh | sh
 ```
 
 or wget
 
 ```bash
-wget https://io.evansosenko.com/tmuxrc/install.sh -O - | sh
+$ wget https://io.evansosenko.com/tmuxrc/install.sh -O - | sh
 ```
 
 ### Manual Install
@@ -48,10 +48,10 @@ if-shell "test -f ~/.tmuxline.conf" "source ~/.tmuxline.conf"
 and run this to install
 
 ```bash
-~/.tmux/plugins/tpm/scripts/install_plugins.sh
-~/.tmux/plugins/tpm/scripts/update_plugin.sh
-~/.tmux/plugins/tpm/scripts/install_plugins.sh
-~/.tmux/plugins/tpm/scripts/update_plugin.sh
+$ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+$ ~/.tmux/plugins/tpm/scripts/update_plugin.sh
+$ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+$ ~/.tmux/plugins/tpm/scripts/update_plugin.sh
 ```
 
 ## Updating
@@ -80,7 +80,7 @@ You can customize this configuration or manage your own in the same way.
 Here is an example of a command you can use to make replacements:
 
 ```bash
-git ls-files -z | xargs -0 sed -i 's/razor-x\/tmuxrc/username\/tmuxrc/g'
+$ git ls-files -z | xargs -0 sed -i 's/razor-x\/tmuxrc/username\/tmuxrc/g'
 ```
 
 ## Contributing
