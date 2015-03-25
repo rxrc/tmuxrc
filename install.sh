@@ -7,7 +7,7 @@ fi
 
 echo -e "\033[32m➤ Installing!   \033[0m"
 
-hash git >/dev/null 2>&1 \
+command -v git >/dev/null 2>&1 \
   && echo -e "\033[32m  ✔ Found         ❰ Git ❱   \033[0m" \
   || {
     echo -e "\033[31m  ✘ Missing       ❰ Git ❱   \033[0m"
@@ -20,7 +20,7 @@ if [ -d ~/.tmux/plugins/tpm ]; then
 else
   echo -e "  ➤ Installing    ❰ tpm ❱   \033[0m"
 
-  hash git >/dev/null 2>&1 && \
+  command -v git >/dev/null 2>&1 && \
     env git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm >/dev/null 2>&1
 
   echo -e "\033[32m    ✔ Installed   ❰ tpm ❱   \033[0m"
