@@ -69,6 +69,7 @@ You can customize this configuration or manage your own in the same way.
    If you prefer a clean start, clone the `minimal` branch:
    it has the same structure and development tools but with
    a very minimal configuration.
+   Tagged releases are based on that branch.
 2. Replace any instance of `razor-x/tmuxrc`
    with the path to your repository's location.
    If you do not host this on GitHub,
