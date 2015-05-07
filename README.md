@@ -1,6 +1,6 @@
 # tmux Configuration
 
-[![MIT License](https://img.shields.io/badge/license-MIT-red.svg)](./LICENSE.txt)
+[![MIT License](https://img.shields.io/github/license/rxrc/tmuxrc.svg)](./LICENSE.txt)
 
 My complete tmux configuration as a tmux plugin.
 
