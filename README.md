@@ -22,13 +22,13 @@ You must be in a tmux session to install.
 You can install this via the command-line with either curl
 
 ```bash
-$ curl -L https://git.io/jggg | sh
+$ curl -L https://git.io/vJAz3 | sh
 ```
 
 or wget
 
 ```bash
-$ wget https://git.io/jggg -O - | sh
+$ wget https://git.io/vJAz3 -O - | sh
 ```
 
 ### Manual Install
