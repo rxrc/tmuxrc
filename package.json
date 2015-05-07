@@ -5,7 +5,7 @@
   "description": "tmux configuration.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/razor-x/tmuxrc.git"
+    "url": "https://github.com/rxrc/tmuxrc.git"
   },
   "keywords": [
     "tmux",
@@ -15,7 +15,7 @@
   "author": "Evan Sosenko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/razor-x/tmuxrc/issues"
+    "url": "https://github.com/rxrc/tmuxrc/issues"
   },
-  "homepage": "https://github.com/razor-x/tmuxrc"
+  "homepage": "https://github.com/rxrc/tmuxrc"
 }
