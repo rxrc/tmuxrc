@@ -28,7 +28,7 @@ fi
 
 if [ -f ~/.tmux.conf ] || [ -h ~/.tmux.conf ]; then
   TMUXRC_LINE=$(head -n 1 ~/.tmux.conf);
-  if [ "$TMUXRC_LINE" != '# razor-x/tmuxrc' ]; then
+  if [ "$TMUXRC_LINE" != '# rxrc/tmuxrc' ]; then
     echo -e "  ➤  Exists       ❰ ~/.tmux.conf ❱   \033[0m"
 
     mv ~/.tmux.conf ~/.tmux.conf.preinstall
@@ -42,10 +42,10 @@ fi
 echo -e "  ➤ Installing    ❰ ~/.tmux.conf ❱   \033[0m"
 
 tee ~/.tmux.conf >/dev/null <<EOF
-# razor-x/tmuxrc
+# rxrc/tmuxrc
 
 if-shell "test -f ~/.tmux/plugins/tmuxrc/plugins.conf" "source ~/.tmux/plugins/tmuxrc/plugins.conf"
-if-shell "test ! -f ~/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm razor-x/tmuxrc'"
+if-shell "test ! -f ~/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm rxrc/tmuxrc'"
 run-shell '~/.tmux/plugins/tpm/tpm'
 if-shell "test -f ~/.tmuxline.conf" "source ~/.tmuxline.conf"
 EOF
