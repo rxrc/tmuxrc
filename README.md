@@ -1,5 +1,6 @@
 # tmux Configuration
 
+[![Release](https://img.shields.io/github/release/rxrc/tmuxrc.svg)](https://github.com/rxrc/tmuxrc/releases)
 [![MIT License](https://img.shields.io/github/license/rxrc/tmuxrc.svg)](./LICENSE.txt)
 
 My complete tmux configuration as a tmux plugin.
