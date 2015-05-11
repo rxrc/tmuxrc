@@ -62,6 +62,15 @@ install and update commands.
 
 Alternatively, you can run the commands listed in the Manual Install section.
 
+## tmuxline.vim
+
+This configuration will load `~/.tmuxline.zsh`
+which can be generated or updated using [tmuxline.vim]
+by running `:TmuxlineSnapshot! ~/.tmuxline.conf`
+from Vim inside a tmux session.
+
+[tmuxline.vim]: https://github.com/edkolev/tmuxline.vim
+
 ## Customization
 
 You can customize this configuration or manage your own in the same way.
