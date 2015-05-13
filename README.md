@@ -40,10 +40,10 @@ $ wget https://git.io/vJAz3 -O - | sh
 ```tmux
 # rxrc/tmuxrc
 
-if-shell "test -f ~/.tmux/plugins/tmuxrc/plugins.conf" "source ~/.tmux/plugins/tmuxrc/plugins.conf"
-if-shell "test ! -f ~/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm rxrc/tmuxrc'"
-run-shell '~/.tmux/plugins/tpm/tpm'
-if-shell "test -f ~/.tmuxline.conf" "source ~/.tmuxline.conf"
+if-shell "test -f $HOME/.tmux/plugins/tmuxrc/plugins.conf" "source $HOME/.tmux/plugins/tmuxrc/plugins.conf"
+if-shell "test ! -f $HOME/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm rxrc/tmuxrc'"
+run-shell '$HOME/.tmux/plugins/tpm/tpm'
+if-shell "test -f $HOME/.tmuxline.conf" "source $HOME/.tmuxline.conf"
 ```
 
 and run this to install
