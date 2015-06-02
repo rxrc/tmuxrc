@@ -73,6 +73,9 @@ from Vim inside a tmux session.
 
 ## Customization
 
+Note that any additional `.tmux` configuration files added to this plugin
+must have the execute bit set to load.
+
 You can customize this configuration or manage your own in the same way.
 
 1. Clone or fork this.
