@@ -37,23 +37,23 @@ $ wget https://git.io/vJAz3 -O - | sh
 1. Install [Tmux Plugin Manager].
 2. Create `~/.tmux.conf` with
 
-```tmux
-# rxrc/tmuxrc
+  ```tmux
+  # rxrc/tmuxrc
 
-if-shell "test -f $HOME/.tmux/plugins/tmuxrc/plugins.conf" "source $HOME/.tmux/plugins/tmuxrc/plugins.conf"
-if-shell "test ! -f $HOME/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm rxrc/tmuxrc'"
-run-shell '$HOME/.tmux/plugins/tpm/tpm'
-if-shell "test -f $HOME/.tmuxline.conf" "source $HOME/.tmuxline.conf"
-```
+  if-shell "test -f $HOME/.tmux/plugins/tmuxrc/plugins.conf" "source $HOME/.tmux/plugins/tmuxrc/plugins.conf"
+  if-shell "test ! -f $HOME/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm rxrc/tmuxrc'"
+  run-shell '$HOME/.tmux/plugins/tpm/tpm'
+  if-shell "test -f $HOME/.tmuxline.conf" "source $HOME/.tmuxline.conf"
+  ```
 
-and run this to install
+3. Install with
 
-```bash
-$ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
-$ ~/.tmux/plugins/tpm/scripts/update_plugin.sh
-$ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
-$ ~/.tmux/plugins/tpm/scripts/update_plugin.sh
-```
+  ```bash
+  $ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+  $ ~/.tmux/plugins/tpm/scripts/update_plugin.sh
+  $ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+  $ ~/.tmux/plugins/tpm/scripts/update_plugin.sh
+  ```
 
 ## Updating
 
