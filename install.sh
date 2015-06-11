@@ -47,7 +47,6 @@ tee $HOME/.tmux.conf >/dev/null <<EOF
 if-shell "test -f \$HOME/.tmux/plugins/tmuxrc/plugins.conf" "source \$HOME/.tmux/plugins/tmuxrc/plugins.conf"
 if-shell "test ! -f \$HOME/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm rxrc/tmuxrc'"
 run-shell '\$HOME/.tmux/plugins/tpm/tpm'
-if-shell "test -f \$HOME/.tmuxline.conf" "source \$HOME/.tmuxline.conf"
 EOF
 
 echo -e "\033[32m    ✔ Installed   ❰ ~/.tmux.conf ❱   \033[0m"
@@ -55,9 +54,7 @@ echo -e "\033[32m    ✔ Installed   ❰ ~/.tmux.conf ❱   \033[0m"
 echo -e "  ➤ Run           ❰ Install Plugins ❱   \033[0m"
 
 sh $HOME/.tmux/plugins/tpm/scripts/install_plugins.sh &>/dev/null
-sh $HOME/.tmux/plugins/tpm/scripts/update_plugin.sh all &>/dev/null
 sh $HOME/.tmux/plugins/tpm/scripts/install_plugins.sh &>/dev/null
-sh $HOME/.tmux/plugins/tpm/scripts/update_plugin.sh all &>/dev/null
 
 echo -e "\033[32m    ✔ Completed   ❰ Install Plugins ❱   \033[0m"
 
