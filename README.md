@@ -43,7 +43,6 @@ $ wget https://git.io/vJAz3 -O - | sh
   if-shell "test -f $HOME/.tmux/plugins/tmuxrc/plugins.conf" "source $HOME/.tmux/plugins/tmuxrc/plugins.conf"
   if-shell "test ! -f $HOME/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm rxrc/tmuxrc'"
   run-shell '$HOME/.tmux/plugins/tpm/tpm'
-  if-shell "test -f $HOME/.tmuxline.conf" "source $HOME/.tmuxline.conf"
   ```
 
 3. Install with
@@ -64,7 +63,7 @@ Alternatively, you can run the commands listed in the Manual Install section.
 
 ## tmuxline.vim
 
-This configuration will load `~/.tmuxline.zsh`
+If found, this configuration will load `~/.tmuxline.zsh`
 which can be generated or updated using [tmuxline.vim]
 by running `:TmuxlineSnapshot! ~/.tmuxline.conf`
 from Vim inside a tmux session.
