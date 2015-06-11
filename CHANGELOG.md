@@ -3,6 +3,7 @@
 ## HEAD
 
 - Add development mode using Gulp.
+- Add plugin directory for `.conf` files.
 - Must set execute bit on `.tmux` files.
 
 ## 0.2.0
