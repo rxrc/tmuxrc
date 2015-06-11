@@ -2,6 +2,7 @@
 
 ## HEAD
 
+- Add development mode using Gulp.
 - Must set execute bit on `.tmux` files.
 
 ## 0.2.0
