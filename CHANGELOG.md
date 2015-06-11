@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.0.0
 
 - Add development mode using Gulp.
 - Add plugin directory for `.conf` files.
