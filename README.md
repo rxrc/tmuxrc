@@ -49,9 +49,7 @@ $ wget https://git.io/vJAz3 -O - | sh
 
   ```bash
   $ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
-  $ ~/.tmux/plugins/tpm/scripts/update_plugin.sh
   $ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
-  $ ~/.tmux/plugins/tpm/scripts/update_plugin.sh
   ```
 
 ## Updating
