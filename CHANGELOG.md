@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- Wrap install script in function.
+
 ## 1.0.0
 
 - Add development mode using Gulp.
