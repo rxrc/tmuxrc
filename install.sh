@@ -1,9 +1,13 @@
+install_tmuxrc () {
+
 set -e
 
 if ! [ -n "$TMUX" ]; then
   echo -e "\033[31m✘ Must run in a tmux session to install!"
   exit 1
 fi
+
+set -u
 
 echo -e "\033[32m➤ Installing!   \033[0m"
 
@@ -61,3 +65,6 @@ echo -e "\033[32m    ✔ Completed   ❰ Install Plugins ❱   \033[0m"
 echo -e "\033[32m✔ Install complete!   \033[0m"
 
 exit 0
+}
+
+install_tmuxrc
