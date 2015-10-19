@@ -48,8 +48,8 @@ $ wget https://git.io/vJAz3 -O - | sh
 3. Install with
 
   ```bash
-  $ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
-  $ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+  $ ~/.tmux/plugins/tpm/bin/install_plugins
+  $ ~/.tmux/plugins/tpm/bin/install_plugins
   ```
 
 ## Updating

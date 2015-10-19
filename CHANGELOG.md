@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- Use install scripts in `bin` directory.
+
 ## 1.0.1
 
 - Wrap install script in function.
