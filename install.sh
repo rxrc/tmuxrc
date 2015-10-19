@@ -57,8 +57,8 @@ echo -e "\033[32m    ✔ Installed   ❰ ~/.tmux.conf ❱   \033[0m"
 
 echo -e "  ➤ Run           ❰ Install Plugins ❱   \033[0m"
 
-sh $HOME/.tmux/plugins/tpm/scripts/install_plugins.sh &>/dev/null
-sh $HOME/.tmux/plugins/tpm/scripts/install_plugins.sh &>/dev/null
+sh $HOME/.tmux/plugins/tpm/bin/install_plugins &>/dev/null
+sh $HOME/.tmux/plugins/tpm/bin/install_plugins &>/dev/null
 
 echo -e "\033[32m    ✔ Completed   ❰ Install Plugins ❱   \033[0m"
 
