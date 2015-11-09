@@ -22,13 +22,13 @@ You must be in a tmux session to install.
 
 You can install this via the command-line with either curl
 
-```bash
+```
 $ curl -L https://git.io/vJAz3 | sh
 ```
 
 or wget
 
-```bash
+```
 $ wget https://git.io/vJAz3 -O - | sh
 ```
 
@@ -47,7 +47,7 @@ $ wget https://git.io/vJAz3 -O - | sh
 
 3. Install with
 
-  ```bash
+  ```
   $ ~/.tmux/plugins/tpm/bin/install_plugins
   $ ~/.tmux/plugins/tpm/bin/install_plugins
   ```
@@ -90,7 +90,7 @@ You can customize this configuration or manage your own in the same way.
 
 Here is an example of a command you can use to make replacements:
 
-```bash
+```
 $ git ls-files -z | xargs -0 sed -i 's/rxrc\/tmuxrc/username\/tmuxrc/g'
 ```
 
@@ -102,26 +102,26 @@ which will install the local development files to the plugin path.
 First, follow the normal install steps if you haven't already.
 Then, install the development dependences via [npm] with
 
-```bash
+```
 $ npm install
 ```
 
 While in a tmux session, enter development mode with
 
-```bash
+```
 $ npm run dev
 ```
 
 After entering development mode,
 have gulp watch for changes with
 
-```bash
+```
 $ npm run watch
 ```
 
 To switch out of development mode run
 
-```bash
+```
 $ npm run nodev
 ```
 
