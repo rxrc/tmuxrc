@@ -11,7 +11,7 @@ repoPath = 'rxrc/tmuxrc'
 pluginPath = "#{homePath}/.tmux/plugins/tmuxrc"
 
 tpm = (task) ->
-  "#{homePath}/.tmux/plugins/tpm/scripts/#{task}.sh &>/dev/null"
+  "#{homePath}/.tmux/plugins/tpm/bin/#{task} &>/dev/null"
 
 tpmUpdate = [
     tpm('install_plugins')
