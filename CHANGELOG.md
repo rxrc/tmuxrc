@@ -6,6 +6,7 @@
 - Use local gulp
 - Add npm-debug.log to .gitignore.
 - Update development dependencies.
+- Fix issues with development mode.
 
 ## 1.0.1
 
