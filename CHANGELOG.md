@@ -5,6 +5,7 @@
 - Use install scripts in `bin` directory.
 - Use local gulp
 - Add npm-debug.log to .gitignore.
+- Update development dependencies.
 
 ## 1.0.1
 
