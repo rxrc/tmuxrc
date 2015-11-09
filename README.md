@@ -103,27 +103,26 @@ First, follow the normal install steps if you haven't already.
 Then, install the development dependences via [npm] with
 
 ```bash
-$ [sudo] npm install --global gulp
 $ npm install
 ```
 
 While in a tmux session, enter development mode with
 
 ```bash
-$ gulp dev
+$ npm run dev
 ```
 
 After entering development mode,
 have gulp watch for changes with
 
 ```bash
-$ gulp
+$ npm run watch
 ```
 
 To switch out of development mode run
 
 ```bash
-$ gulp nodev
+$ npm run nodev
 ```
 
 [Gulp]: http://gulpjs.com/

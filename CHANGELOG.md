@@ -3,6 +3,7 @@
 ## HEAD
 
 - Use install scripts in `bin` directory.
+- Use local gulp
 
 ## 1.0.1
 
