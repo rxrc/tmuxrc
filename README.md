@@ -4,6 +4,14 @@
 [![GitHub license](https://img.shields.io/github/license/rxrc/tmuxrc.svg)](./LICENSE.txt)
 
 My complete tmux configuration as a tmux plugin.
+For an empty starting config that follows the same organization,
+switch to the `minimal` branch.
+
+Note that versioned released are cut from the `minimal` branch,
+and changes between those releases are documented in the
+[CHANGELOG](./CHANGELOG.md).
+The `master` branch represents my current tmux environment,
+and is intended to remain unversioned.
 
 ## Description
 
