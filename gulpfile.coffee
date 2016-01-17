@@ -21,13 +21,13 @@ tpmUpdate = [
 gulp.task 'default', ['watch']
 
 gulp.task 'nodev', ->
-  del(pluginPath, {force: true})
+  del.sync(pluginPath, {force: true})
 
   gulp.src('')
   .pipe $.shell(tpmUpdate)
 
 gulp.task 'dev', ->
-  del(pluginPath, {force: true})
+  del.sync(pluginPath, {force: true})
 
   gulp.src('*.tmux')
   .pipe gulp.dest(pluginPath)
@@ -45,7 +45,7 @@ gulp.task 'dev', ->
 gulp.task 'watch', ['dev'], ->
   $.watch ['./*.tmux', './*.conf', './plugin/**/*.conf'], (file) ->
     if file.event is 'unlink'
-      del(file.path, {force: true})
+      del.sync(file.path, {force: true})
   .pipe $.replace(repoPath, pluginPath)
   .pipe gulp.dest(pluginPath)
   .pipe $.shell([tpmUpdate])
