@@ -109,20 +109,13 @@ $ npm install
 While in a tmux session, enter development mode with
 
 ```
-$ npm run dev
+$ npm start
 ```
 
-After entering development mode,
-have gulp watch for changes with
+Switch out of development mode with
 
 ```
-$ npm run watch
-```
-
-To switch out of development mode run
-
-```
-$ npm run nodev
+$ npm stop
 ```
 
 [Gulp]: http://gulpjs.com/

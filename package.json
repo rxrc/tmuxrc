@@ -8,9 +8,8 @@
     "url": "https://github.com/rxrc/tmuxrc.git"
   },
   "scripts": {
-    "dev": "gulp dev",
-    "nodev": "gulp nodev",
-    "watch": "gulp watch"
+    "start": "gulp dev",
+    "stop": "gulp nodev"
   },
   "keywords": [
     "tmux",

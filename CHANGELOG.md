@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+Use `npm start` and `npm stop`.
+
 ## 1.1.0
 
 - Use install scripts in `bin` directory.
