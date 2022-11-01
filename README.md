@@ -43,21 +43,21 @@ $ wget rc.evansosenko.com/tmuxrc/install.sh -O - | sh
 ### Manual Install
 
 1. Install [Tmux Plugin Manager].
-2. Create `~/.tmux.conf` with
+2. Create `~/.config/tmux/tmux.conf` with
 
   ```tmux
   # rxrc/tmuxrc
 
-  if-shell "test -f $HOME/.tmux/plugins/tmuxrc/plugins.conf" "source $HOME/.tmux/plugins/tmuxrc/plugins.conf"
-  if-shell "test ! -f $HOME/.tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm rxrc/tmuxrc'"
-  run-shell '$HOME/.tmux/plugins/tpm/tpm'
+  if-shell "test -f $HOME/.config/tmux/plugins/tmuxrc/plugins.conf" "source $HOME/.config/tmux/plugins/tmuxrc/plugins.conf"
+  if-shell "test ! -f $HOME/.config/tmux/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm rxrc/tmuxrc'"
+  run-shell '$HOME/.config/tmux/plugins/tpm/tpm'
   ```
 
 3. Install with
 
   ```
-  $ ~/.tmux/plugins/tpm/bin/install_plugins
-  $ ~/.tmux/plugins/tpm/bin/install_plugins
+  $ ~/.config/tmux/plugins/tpm/bin/install_plugins
+  $ ~/.config/tmux/plugins/tpm/bin/install_plugins
   ```
 
 ## Updating
@@ -69,9 +69,9 @@ Alternatively, you can run the commands listed in the Manual Install section.
 
 ## tmuxline.vim
 
-If found, this configuration will load `~/.tmuxline.zsh`
+If found, this configuration will load `~/.config/tmux/tmuxline.zsh`
 which can be generated or updated using [tmuxline.vim]
-by running `:TmuxlineSnapshot! ~/.tmuxline.conf`
+by running `:TmuxlineSnapshot! ~/.config/tmux/tmuxline.conf`
 from Vim inside a tmux session.
 
 [tmuxline.vim]: https://github.com/edkolev/tmuxline.vim

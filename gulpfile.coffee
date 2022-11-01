@@ -8,10 +8,10 @@ $ = require('gulp-load-plugins')()
 
 repoPath = 'rxrc/tmuxrc'
 
-pluginPath = "#{homePath}/.tmux/plugins/tmuxrc"
+pluginPath = "#{homePath}/.config/tmux/plugins/tmuxrc"
 
 tpm = (task) ->
-  "#{homePath}/.tmux/plugins/tpm/bin/#{task} &>/dev/null"
+  "#{homePath}/.config/tmux/plugins/tpm/bin/#{task} &>/dev/null"
 
 tpmUpdate = [
     tpm('install_plugins')
