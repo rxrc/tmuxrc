@@ -54,9 +54,9 @@ install_tmuxrc () {
   tee $tmuxhome/tmux.conf >/dev/null <<EOF
 # $repo
 
-if-shell "test -f \$tmuxhome/plugins/tmuxrc/plugins.conf" "source \$tmuxhome/plugins/tmuxrc/plugins.conf"
-if-shell "test ! -f \$tmuxhome/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm $repo'"
-run-shell '\$tmuxhome/plugins/tpm/tpm'
+if-shell "test -f $tmuxhome/plugins/tmuxrc/plugins.conf" "source $tmuxhome/plugins/tmuxrc/plugins.conf"
+if-shell "test ! -f $tmuxhome/plugins/tmuxrc/plugins.conf" "set -g @tpm_plugins 'tmux-plugins/tpm $repo'"
+run-shell '$tmuxhome/plugins/tpm/tpm'
 EOF
 
   echo -e "\033[32m    ✔ Installed   ❰ $tmuxhome/tmux.conf ❱   \033[0m"
